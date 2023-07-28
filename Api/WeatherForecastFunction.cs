@@ -29,7 +29,7 @@ namespace ApiIsolated
                 TemperatureC = temp = randomNumber.Next(-20, 55),
                 Summary = GetSummary(temp)
             }).ToArray();
-
+            
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.WriteAsJsonAsync(result);
 
