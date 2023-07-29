@@ -22,7 +22,7 @@ namespace ApiIsolated
         {
             var randomNumber = new Random();
             var temp = 0;
-
+             
             var result = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
